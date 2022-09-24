@@ -1,0 +1,144 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+ body{
+background: #151a27;
+min-height: 100vh;
+}
+h1{
+    color:#c6ceff;
+    font-size: 4rem;
+  text-align: center;
+    display: block;
+    padding:3px 10px ;
+}
+h2{
+    color:#c6ceff;
+    font-size: 2.5rem;
+    position: absolute;
+    top:25%;
+    left: 0%;
+  text-align: center;
+    display: block;
+    padding:3px 10px ;
+}
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 82vh;
+}
+#container
+{
+display: none;
+width:35% ;
+aspect-ratio: 1 / 1;
+padding: 0px;
+border-radius: 20px;
+}
+ul{
+    display: flex;
+    position: relative;
+    top:1%;
+    list-style-type: none;
+}
+li{
+    width:33%;
+    border: solid 2px #c6ceff;
+    background-color: #0f6bac;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: #c6ceff  ;
+    text-align: center;
+    font-size:5em ;
+    cursor: pointer;
+    aspect-ratio: 1 / 1; 
+}
+#ai,#vs1,#vs{ 
+    border: none;
+    font-size: 30px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    aspect-ratio: 4 / 1; 
+    width: 500px;
+    text-decoration: none;
+    display: inline-block;
+
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    background-color: transparent; 
+    color: #0f6bac; 
+    border: 2px solid #0f6bac;
+    cursor: pointer;
+  }
+
+  
+#ai:hover {
+    background-color: rgb(0, 73, 128);
+    color: white;
+    border: 2px solid rgb(0, 73, 128);
+
+  }
+  
+#vs1:hover,#vs:hover{
+    background-color: teal;
+    color: white;
+    border: 2px solid teal;
+
+  }
+#turn,#Winner{
+    position:absolute;
+    left: 70%;
+    font-size: 4rem;
+    color:#c6ceff;
+    display: none;
+
+  }
+#Winner{
+    left: 38%;
+    top:88%;
+  }
+  #vs{
+    position: absolute;
+    top:80%;
+   width: 400px;
+  display: none;
+  }
+  @media only screen and (max-width: 600px)
+  {
+
+    #container
+    {
+    display: none;
+   
+    width:90% ;
+    aspect-ratio: 1 / 1;
+    padding: 0px;
+    border-radius: 20px;
+    }
+    #turn,#Winner{
+        position:absolute;
+        left: 0%;
+        top:20%;
+        font-size: 4rem;
+        color:#c6ceff;
+        display: none;
+    
+      }
+    #Winner{
+        
+        top:88%;
+      }
+      #ai,#vs1{
+        border-right: none;
+      }
+    #vs{
+        top:100%;
+        width: 90%;
+    }
+  }
